@@ -1,0 +1,187 @@
+<!doctype html>
+<html >
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link type="text/css" href="custom.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="emergency.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="icon" href="icon.png">
+
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <title>Emergency!</title>
+    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+
+
+
+    <!-- For Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+
+   
+    
+
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+     <!-- The Modal -->
+  <div class="modal fade" id="doctor">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        
+        
+        <!-- Modal body -->
+            <div class="modal-body">
+                <h1 class="text-intro">If you are a doctor then you can log in here.</h1>
+                <div class="form-div">
+                    
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="txtEmail" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+    
+                            <input type="password" class="form-control" id="txtPassword" placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox"> Remember me
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-warning btn-block mybtn" id="btnSignIn">Submit</button>
+                        <center><a href="#" title="Reset Password"><small>Forgot Password ?</small></a></center>
+                        <center> Not registered!!? sign up now!</center>
+                    
+                    <form action="dsu/dsu.html">
+                        <button type="submit" class="btn btn-dark btn-block mybtn">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        
+       
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="modal fade" id="user">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        
+        
+        <!-- Modal body -->
+            <div class="modal-body">
+                <h1 class="text-intro">If you are an user then you can log in here.</h1>
+                <div class="form-div">
+                    
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+    
+                            <input type="password" class="form-control" id="pwd" placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox"> Remember me
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-warning btn-block mybtn">Submit</button>
+                        <center><a href="#" title="Reset Password"><small>Forgot Password ?</small></a></center>
+                        <center> Not registered!!? sign up now!</center>
+                    
+                    <form action="usu/usu.html">
+                        <button type="submit" class="btn btn-dark btn-block mybtn">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        
+       
+        </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+    <!--  NAvber  -->
+
+
+
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <a class="navbar-brand" href="../index.html"><img src="../image/logo.png" style="height:30px; "></a>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <div class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+            </div>
+            <div class="form-inline my-2 my-lg-0">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign In/Up</button>
+                
+            </div>
+        </div>
+    </nav>
+
+
+<br><br>
+<br><br>
+    <h5 style="text-align: center;">Here you can find the nearest hospitals arround your location!</h5>
+
+    <br>
+
+
+
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxOYncCMj8t4fie4Hvv5JeF-Wg5CO3-Y4&libraries=places&callback=initMap" async defer></script>
+
+
+
+
+
+<script src="emergency.js"></script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+
+</html>

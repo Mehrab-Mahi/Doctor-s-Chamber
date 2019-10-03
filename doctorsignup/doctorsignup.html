@@ -1,0 +1,489 @@
+<!doctype html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link type="text/css" href="custom.css" rel="stylesheet">
+    <link type="text/css" href="dsu.css" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <title>Doctor's sign up</title>
+    <link rel="icon" href="../image/icon.png">
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+
+
+
+    <!-- For Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+
+
+</head>
+
+
+<body>
+
+
+  <!-- The Modal -->
+
+
+
+
+
+  
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
+
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <a class="navbar-brand" href="../index.html"><img src="../image/logo.png" style="height:40px; "></a>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03" >
+        <div class="navbar-nav mr-auto mt-2 mt-lg-0">
+      
+        </div>
+        <div class="form-inline my-2 my-lg-0">
+         
+        </div>
+      </div>
+    </nav>
+
+    <br><br><br>
+
+    
+
+    <div class="aa"  style="background: #eceff1;margin-top: -10px;">
+
+    <p style="text-align: center; font-size: 40px;"><b>Welcome to doctor's chamber</b></p>
+
+    <p style="font-size: 20px; text-align: center;padding-top: 10px;padding-left: 120px;padding-right: 120px;font-weight: 90;">If you are a doctor then you can create your profile here so that patients all over the country can visit you in your service time. So create your profile here!!</p>
+
+
+
+
+
+    <div class="container">
+
+      <div class="row">
+        
+        <div class="col-md-3">
+          
+        </div>
+
+        <div class="col-md-6">
+          
+          <h4 class="text-info">Doctor Registration Form</h4>
+          <hr>
+
+
+             <div class="form-group">
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <label class="doc_name">Name</label>
+                  </div>
+
+                  <div class="col-md-8">
+                    <input type="search" class="form-control input-sm name" id="name" placeholder="(Full Name)" name="name">
+                  </div>
+
+                </div>
+
+             </div>
+
+
+
+              <div class="form-group">
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <label class="doc_name">Speciality</label>
+                  </div>
+
+                  <div class="col-md-8">
+                    <select class="form-control input-sm specialty" name="specialty" id="specialty">
+                      <option value="1">Allergy &amp; Immunology</option>
+                      <option value="2">Anesthesia</option>
+                      <option value="3">Cardiology (Heart, Cardiac Surgery, Hypertension, Blood Pressure)</option>
+                      <option value="40">Colorectal Surgery (Surgery of Anal Canal, Rectum, etc.)</option>
+                      <option value="44">Dentistry (Dental, Orthodontics, Maxillofacial Surgery, Scaling)</option>
+                      <option value="4">Dermatology (Skin, Venereology, Sexual, Hair, Allergy)</option>
+                      <option value="6">Endocrinology (Diabetes, Hormones, Thyroid, etc.)</option>
+                      <option value="23">ENT (Ear, Nose &amp; Throat, Otorhinolaryngology)</option>
+                      <option value="8">Gastroenterology (Stomach, Pancreas and Intestine)</option>
+                      <option value="9">General Physician (All or any common diseases and health issues)</option>
+                      <option value="37">General Surgery (Incision, Operation)</option>
+                      <option value="11">Gynaecologic Oncology (Cancer of Female Reproductive System)</option>
+                      <option value="48">Gynaecology and Obstetrics (Pregnancy, Menstrual, Uterus, Female)</option>
+                      <option value="12">Haematology (Blood related diseases)</option>
+                      <option value="58">Hepato-Biliary- Pancreatic Surgery</option>
+                      <option value="50">Hepatology (Liver, Gallbladder, Biliary system)</option>
+                      <option value="13">Infectious Diseases</option>
+                      <option value="45">Infertility</option>
+                      <option value="14">Medicine (All Diseases of Adults)</option>
+                      <option value="15">Neonatology (New Born Issues)</option>
+                      <option value="16">Nephrology (Kidney, Ureter, Urinary Bladder)</option>
+                      <option value="17">Neuromedicine (Brain, Spinal Cord, Nerve)</option>
+                      <option value="49">Neurosurgery (Surgery of Brain, Spinal Cord and Nerve)</option>
+                      <option value="32">Nutritionist (Food, Diet, Weight Management)</option>
+                      <option value="20">Oncology (Cancer)</option>
+                      <option value="21">Ophthalmology (Eye, Vision, Cataracts, etc.)</option>
+                      <option value="22">Orthopaedics (Bone, Joint, Fractures)</option>
+                      <option value="18">Other Speciality (not mentioned in the list)</option>
+                      <option value="47">Paediatric Surgery (Surgery for Children)</option>
+                      <option value="25">Paediatrics (Child or Infant any disease)</option>
+                      <option value="55">Pain Management</option>
+                      <option value="26">Physical Medicine (Paralysis, Pain Management)</option>
+                      <option value="54">Physiotherapy</option>
+                      <option value="27">Plastic Surgery, Reconstruction or Cosmetic Surgery</option>
+                      <option value="30">Psychiatry (Mental Health, Drug Abuse, Depression, etc.)</option>
+                      <option value="31">Respiratory Medicine (Pulmonary, Lung Diseases, Bronchitis etc.)</option>
+                      <option value="35">Rheumatology (Arthritis, Joint, Soft Tissue problems)</option>
+                      <option value="46">Sex Specialist(Venereology)</option>
+                      <option value="56">Speech and Language Therapy</option>
+                      <option value="38">Thoracic Surgery (Surgery in Chest, Lung, etc.)</option>
+                      <option value="42">Urology (Surgery for Kidney, Ureter or Urinary Bladder)</option>
+                      <option value="39">Vascular Surgery (e.g. Surgery of Blood Vessels)</option>
+                    </select>
+                  </div>
+
+                </div>
+
+             </div>
+
+
+
+             <div class="form-group">
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <label class="doc_name">Profile Image</label>
+                  </div>
+
+                  <div class="col-md-8">
+                    <input id="fileButton" type="file" name="image" value="upload" size="50">
+                   
+                  </div>
+
+                </div>
+
+             </div>
+
+
+
+              <div class="form-group">
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <label class="doc_name">Email</label>
+                  </div>
+
+                  <div class="col-md-8">
+                    <input type="search" class="form-control input-sm name" type="email" id="em" placeholder="(Email Address)" name="name">
+                  </div>
+
+                </div>
+
+             </div>
+
+
+              <div class="form-group">
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <label class="doc_name">BMDC Reg No</label>
+                  </div>
+
+                  <div class="col-md-8">
+                    <input type="search" class="form-control input-sm name" id="bmdcRegNo" placeholder="(BMDC Registration Number)" name="name">
+                  </div>
+
+                </div>
+
+             </div>
+
+
+             <div class="form-group">
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <label class="doc_name">Degree</label>
+                  </div>
+
+                  <div class="col-md-8">
+                    <textarea class="degrees input-sm form-control" id="degree" name="degrees" placeholder="(Detail of the degree, institute and other specification as to appear on the profile)" style="height:100px; resize:vertical;"></textarea>
+                  </div>
+
+                </div>
+
+             </div>
+
+
+             <div class="form-group">
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <label class="doc_name">Main Hospital</label>
+                    <p style="font-size:12px;font-weight: 700; ">You can add more in your profile section</p>
+                  </div>
+
+                  <div class="col-md-8">
+                    <input type="search" class="form-control input-sm name" id="mainHospital" placeholder="(Hospital Name)" name="name">
+                  </div>
+
+                </div>
+
+             </div>
+
+
+
+             <div class="form-group">
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <label class="doc_name">Hospital Address</label>
+                  </div>
+
+                  <div class="col-md-8">
+                    <input type="search" class="form-control input-sm name" id="hospitalAddress" placeholder="(Address)" name="name">
+                  </div>
+
+                </div>
+
+             </div>
+
+              <div class="form-group">
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <label class="doc_name">Hospital Discrict</label>
+                  </div>
+
+                  <div class="col-md-8">
+                    <select class="form-control input-sm specialty" id="district" name="specialty">
+                      <option value="100">Dhaka</option>
+                      <option value="101">Chandpur</option>
+                      <option value="102">Gaibandha</option>
+                      <option value="103">Pirozpur</option>
+                      <option value="104">Razbari</option>
+                      <option value="105">Shariatpur</option>
+                      <option value="106">Munshiganj</option>
+                      <option value="107">Narayanganj</option>
+                      
+                    </select>
+                  </div>
+
+                </div>
+
+             </div>
+
+
+             <div class="form-group">
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <label class="doc_name">Hospital Service Days</label>
+                  </div>
+
+                  <div class="col-md-8">
+                    <input type="search" class="form-control input-sm name" id="hospitalServiceDays" placeholder="(Days)" name="name">
+                  </div>
+
+                </div>
+
+             </div>
+
+             <div class="form-group">
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <label class="doc_name">Hospital Service Time</label>
+                  </div>
+
+                  <div class="col-md-8">
+                    <input type="search" class="form-control input-sm name" id="hospitalServiceTime" placeholder="(Time)" name="name">
+                  </div>
+
+                </div>
+
+             </div>
+
+
+
+             <div class="form-group">
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <label class="doc_name">Hospital Consultaion Fee</label>
+                  </div>
+
+                  <div class="col-md-8">
+                    <input type="search" class="form-control input-sm name" id="hospitalConsultaionFee" placeholder="(Fee)" name="name">
+                  </div>
+
+                </div>
+
+             </div>
+
+
+
+
+
+
+             <div class="form-group">
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <label class="doc_name">Chamber name</label>
+                  </div>
+
+                  <div class="col-md-8">
+                    <input type="search" class="form-control input-sm name" id="chamberName" placeholder="(chamber)" name="name">
+                  </div>
+
+                </div>
+
+             </div>
+
+
+
+
+
+
+
+
+
+             <div class="form-group">
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <label class="doc_name">Chamber Address</label>
+                  </div>
+
+                  <div class="col-md-8">
+                    <input type="search" class="form-control input-sm name" id="chamberAddress" placeholder="(Address)" name="name">
+                  </div>
+
+                </div>
+
+             </div>
+
+
+             <div class="form-group">
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <label class="doc_name">Chamber Service Days</label>
+                  </div>
+
+                  <div class="col-md-8">
+                    <input type="search" class="form-control input-sm name" id="chamberServiceDays" placeholder="(Days)" name="name">
+                  </div>
+
+                </div>
+
+             </div>
+
+
+             <div class="form-group">
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <label class="doc_name">Chamber Service Time</label>
+                  </div>
+
+                  <div class="col-md-8">
+                    <input type="search" class="form-control input-sm name" id="chamberServiceTime" placeholder="(Time)" name="name">
+                  </div>
+
+                </div>
+
+             </div>
+
+
+
+
+             <div class="form-group">
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <label class="doc_name">Chamber Consultaion Fee</label>
+                  </div>
+
+                  <div class="col-md-8">
+                    <input type="search" class="form-control input-sm name" id="chamberConsultaionFee" placeholder="(Fee)" name="name">
+                  </div>
+
+                </div>
+
+             </div>
+
+
+
+             <div id="map">
+             </div>
+
+
+
+
+  
+
+
+
+             <div class="row">
+              <div class="col-md-4">
+                
+              </div>
+
+              <div class="col-md-4" style="padding: 20px;">
+                <button class="btn btn-success btn-sm" style="width: 100%; "  id="btnSignUp"   type="submit">Submit!!</button>
+              </div>
+
+              <div class="col-md-4">
+                
+              </div>
+               
+             </div>
+
+
+
+
+
+        </div>
+
+        <div class="col-md-3">
+          
+        </div>
+
+      </div>
+
+      
+    </div>
+
+
+  </div>
+
+
+  <script src="doctorsignup.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxOYncCMj8t4fie4Hvv5JeF-Wg5CO3-Y4&libraries=places"
+    async defer></script>
+
+</body>
+
+</html>
