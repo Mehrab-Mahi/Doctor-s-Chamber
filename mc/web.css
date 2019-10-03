@@ -1,0 +1,266 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+
+
+.banner{
+  background-image: url(c.jpg);
+  background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    position: relative;
+    overflow: hidden;
+}  
+
+.white_font {
+    color: #fff;
+}
+.site_heading {
+    margin: 70px;
+}
+.floating_text {
+    position: relative;
+    z-index: 10;
+}
+.text-center {
+    text-align: center;
+}
+.h1, h1 {
+    font-size: 36px;
+}
+
+.emergency{
+  margin-top: 50px;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.example button {
+    float: left;
+    width: 20%;
+    min-height: 46px;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.banner_last_container {
+    margin-top: 105px;
+    color: #fff;
+}
+.floating_text {
+    position: relative;
+    z-index: 10;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.start{
+  padding-top: 40px;
+  margin-bottom: -10px;
+}
+
+.container{
+  padding: 50px;
+}
+
+
+.carousel-fade .carousel-item {
+  height:100%;
+}
+
+.carousel-fade .carousel-item img {
+  height:100vh;
+  width:100%;
+  max-width:100%;
+  background-size:cover;
+  background-origin:content-box;
+  background-clip:content-box;
+  background-position:center;
+  color:rgba(0,0,0,0.56);
+  filter:brightness(30%);
+  right:0;
+  left:0;
+  resize:both;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background:none;
+  border:2px solid #fff;
+  height:30px;
+  width:30px;
+  line-height:55px;
+  opacity:9 !important;
+  filter:brightness(100%) !important;
+  font-size:40px;
+  border-radius:100%;
+}
+
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+  background:#fff;
+  opacity:9;
+  color:#000;
+}
+
+.la {
+  opacity:99;
+  z-index:1;
+  position:relative;
+}
+
+.carousel-indicators li {
+  background:#000;
+  color:#000;
+  height:18px;
+  width:18px;
+  margin:5px !important;
+  border-radius:100%;
+}
+
+.carousel-caption {
+  top:220px;
+}
+
+@media (min-width: 992px) {
+  .carousel-caption {
+    top:220px !important;
+  }
+}
+
+.carousel-caption h3 {
+  font-size:70px;
+  text-align:center;
+  font-weight:bold;
+}
+
+@media (min-width: 992px) {
+  .carousel-caption h3 {
+    font-size:70px !important;
+    text-align:center;
+    font-weight:bold;
+  }
+}
+
+.carousel-caption p {
+  font-size:30px;
+  margin-top:20px;
+  text-align:center;
+}
+
+@media (min-width: 992px) {
+  .carousel-caption p {
+    font-size:30px !important;
+    margin-top:20px;
+    text-align:center;
+  }
+}
+
+.carousel-caption .btn {
+  border:2px solid #fff;
+  border-radius:0;
+}
+
+@media (min-width: 300px) {
+  .img-fluid.w-100.d-block {
+    height:auto;
+  }
+}
+
+@media (min-width: 576px) {
+  .img-fluid.w-100.d-block {
+    height:auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .img-fluid.w-100.d-block {
+    height:auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .img-fluid.w-100.d-block {
+    height:100vh;
+  }
+}
+
+@media (min-width: 300px) {
+  .carousel-caption {
+    top:0;
+    font-size:20px;
+  }
+}
+
+@media (min-width: 300px) {
+  .carousel-caption h3 {
+    font-size:20px;
+  }
+}
+
+.carousel-caption p {
+  font-size:15px;
+}
+
+@media (min-width: 768px) {
+  .carousel-caption {
+    top:100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-caption h3 {
+    font-size:40px;
+  }
+}
+
+
+.ex1{
+  color: #bdbdbd;
+}
+a.ex1:hover, a.ex1:active {color: white;}
+
+.ex2{
+  color: white;
+}
+a.ex2:hover, a.ex2:active{color:white;}
+
+.y{
+  padding-left: 70px;
+}
+

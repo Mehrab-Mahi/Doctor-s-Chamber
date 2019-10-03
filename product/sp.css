@@ -1,0 +1,81 @@
+ img{
+      height: 300px;
+    }
+    .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+      .hero {
+        width: 100%;
+        min-height: 690px;
+        margin-bottom: -200px;
+        padding-top: 110px;
+        background-image: url(d.jpg);
+        background-color: rgba(0,0,0,0.7);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+      }
+      .site-logo {
+        width: 100%;
+        max-width: 181px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .site-logo > img {
+        display: block;
+        width: 100%;
+      }
+      .demos-wrap {
+        position: relative;
+        width: 100%;
+        max-width: 1296px;
+        margin: 0 auto;
+        padding: 50px 30px 20px 30px;
+        background-color: #fff;
+        box-shadow: 0 7px 30px -6px rgba(0, 0, 0, .15);
+        z-index: 10;
+      }
+      @media (max-width: 530px) {
+        .hero { padding-top: 80px; }
+      }
+      @media (max-width: 450px) {
+        .hero { padding-top: 40px; }
+        .demos-wrap {
+          padding-right: 15px;
+          padding-left: 15px;
+        }
+      }
+      @media (max-width: 340px) {
+        .hero { margin-bottom: -280px; }
+        .hero p { display: none; }
+      }
+
+
+
+
+
+
+
+.ex1{
+  color: #bdbdbd;
+}
+a.ex1:hover, a.ex1:active {color: white;}
+
+.ex2{
+  color: white;
+}
+a.ex2:hover, a.ex2:active{color:white;}
+
+.y{
+  padding-left: 70px;
+}
+
+
+.footer{
+  padding-top: 30px;
+}
